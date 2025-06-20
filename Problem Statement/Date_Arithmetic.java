@@ -5,9 +5,8 @@ public class Date_Arithmetic {
     public static void main(String [] args){
         Scanner sc=new Scanner (System.in);
         System.out.print("Enter date (yyyy-MM-dd):");
-        String input = sc.nextLine();
-
-        LocalDate date = LocalDate.parse(input);
+        String n = sc.nextLine();
+        LocalDate date = LocalDate.parse(n);
         LocalDate result = date
                 .plusDays(7)
                 .plusMonths(1)
